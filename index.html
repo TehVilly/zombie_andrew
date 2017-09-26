@@ -20,11 +20,15 @@ This is a joke, wait you read that wrong
             zoom: 10,
             center: {lat: 21.293770, lng: -157.842131}
         });
-    }
-var marker = new google.maps.Marker({
-  position: {lat: 21.294439, lng: -157.842608 },
-  map: mymap
+function stev(){var marker = new google.maps.Marker({
+  position: {lat: 21.294532, lng: -157.842898 },
+  map: zombie_map
 });
+zombie_map.addListener('click', stev(e) {
+  place_marker();
+});
+}
+    }
 </script>
     :^)
 <script async defer
