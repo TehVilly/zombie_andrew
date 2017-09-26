@@ -17,14 +17,14 @@ This is map.
     function initMap() {
 
             zombie_map = new google.maps.Map(document.getElementById('zombie_map'), {
-            zoom: 10,
+            zoom: 5,
             center: {lat: 21.293770, lng: -157.842131}
         });
-function stev(){var marker = new google.maps.Marker({
+function place_marker(){var marker = new google.maps.Marker({
   position: {lat: 21.294532, lng: -157.842898 },
   map: zombie_map
 });
-zombie_map.addListener('click', stev(e) {
+zombie_map.addListener('click', place_marker(e) {
   place_marker();
 });
 }
